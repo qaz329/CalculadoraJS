@@ -1,0 +1,199 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.pantalla {
+    height: 100px;
+}
+.pantalla input {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background: transparent;
+    text-align: right;
+}
+#historial {
+    font-size: 1.1rem;
+    padding: 0 10px;
+    letter-spacing: 5px;
+}
+#principal {
+    font-size: 3rem;
+    color: #000;
+    font-weight: 600;
+    padding: 0 10px;
+}
+.pantalla-historial {
+    height: 30%;
+}
+.pantalla-principal {
+    height: 70%;
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    line-height: 2rem;
+}
+.titol {
+    flex-grow: 1;
+    cursor: default;
+    font-size: 0.8rem;
+    padding-left: 15px;
+}
+.window {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+.window > div {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 2rem;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#calculadora {
+    width: 300px;
+    border: 1px solid #1883d7;
+    box-shadow: 0 0 15px 2px rgba(255, 255, 255, 0.2);
+    background: #f2f2f2;
+}
+.fila {
+    display: flex;
+    flex-wrap: wrap;
+}
+.boto {
+    width: 25%;
+    line-height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boto.close:hover {
+    background: #f00;
+}
+.sub-menu .boto {
+    line-height: 3rem;
+}
+.menu-principal {
+    background: #e6e6e6;
+}
+.numero {
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+.numero:active {
+    font-size: 1.4rem;
+}
+.boto:hover, .boto-top:hover {
+    background: #cfcfcf;
+    cursor: pointer;
+}
+.boto:active {
+    background: #b8b8b8;
+}
+.equals:hover {
+    background: #1883d7;
+}
+.equals:active {
+    background: rgb(67, 152, 207);
+    background: rgba(67, 152, 207, 0.79);
+}
+.top .icon {
+    width: 16px;
+    height: 16px;
+}
+.icon {
+    width: 25px;
+    height: 25px;
+}
+.mode {
+    display: flex;
+}
+.columna {
+    display: flex;
+    align-items: center;
+}
+.historial {
+    flex-grow: 6;
+    justify-content: flex-end;
+}
+.boto-top {
+    display: flex;
+    padding: 10px 15px;
+    pointer-events: none;
+}
+.menu {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.imatge:active img {
+    width: 24px;
+    height: 24px;
+}
+.signe:active {
+    font-size: 0.9rem;
+}
+.punt {
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+.punt:active {
+    font-size: 1.4rem;
+}
+.menu-calculadora:hover {
+    background: #cfcfcf;
+    cursor: pointer;
+}
+.mode-triat {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    cursor: default;
+    padding: 10px 12px;
+    font-weight: 900;
+}
+.memoria {
+    display: flex;
+    font-size: 0.75rem;
+    color: #757575;
+}
+.memoria > div:hover {
+    color: #000;
+    background: #cfcfcf;
+    cursor: pointer;
+}
+.memoria > div {
+    flex-grow: 1;
+    text-align: center;
+    line-height: 2rem;
+    pointer-events:none;
+}
+
+#suma-resta {
+    pointer-events: none;
+}
