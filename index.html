@@ -41,10 +41,10 @@
 
 				<div class="pantalla">
 					<div class="pantalla-historial">
-						<input id="historial" name="history" type="text" value="" disabled>
+						<input id="historial" type="text" value="" disabled>
 					</div>
 					<div class="pantalla-principal">
-						<input id="principal" name="main" value="" type="text" disabled>
+						<input id="principal" value="" type="text" disabled>
 					</div>
 				</div>
 
@@ -67,13 +67,13 @@
 	          
 						<!-- BOTONS SUPERIORS (blanc) -->
 						<div class="fila">
-							<div id="percentage" class="boto imatge signe" role="button">
+							<div id="percentage" class="boto imatge signe" data-value="%" role="button">
 								<img class="icon" src="https://png.icons8.com/ios/50/000000/percentage.png">
 							</div>
-							<div id="arrel" class="boto imatge signe" role="button">
+							<div id="arrel" class="boto imatge signe" data-value="arrel" role="button">
 								<img class="icon" src="https://png.icons8.com/windows/50/000000/square-root.png">
 							</div>
-							<div id="quadrat" class="boto signe" role="button">
+							<div id="quadrat" class="boto signe" data-value="quadrat" role="button">
 								<span>
 									<sub>x</sub>
 								</span>
@@ -81,7 +81,7 @@
 									<sup>2</sup>
 								</span>
 							</div>
-							<div id="fraccio" class="boto signe" role="button">
+							<div id="fraccio" class="boto signe" data-value="1/x" role="button">
 								<span>
 									<sup>1</sup>
 								</span>
@@ -96,50 +96,50 @@
 					<!-- BOTONS INFERIORS (gris) -->
 					<div class="menu-principal">
 						<div class="fila">
-							<div id="borra-entrada" class="boto signe" role="button">CE</div>
-							<div id="borra-tot" class="boto signe" role="button">C</div>
-							<div id="borra-un" class="boto imatge signe" role="button">
+							<div id="borra-entrada" class="boto signe" data-value="CE" role="button">CE</div>
+							<div id="borra-tot" class="boto signe" data-value="C" role="button">C</div>
+							<div id="borra-un" class="boto imatge signe" data-value="CS" role="button">
 								<img class="icon" src="https://png.icons8.com/windows/50/000000/clear-symbol.png">
 							</div>
-							<div id="dividir" class="boto imatge signe" role="button">
+							<div id="dividir" class="boto imatge signe" data-value="/" role="button">
 								<img class="icon" src="https://png.icons8.com/windows/50/000000/divide.png">
 							</div>
 						</div>
 
 						<div class="fila">
-							<div class="boto numero" role="button">7</div>
-							<div class="boto numero" role="button">8</div>
-							<div class="boto numero" role="button">9</div>
-							<div id="multiplica" class="boto imatge signe" role="button">
+							<div class="boto numero" data-value="7" role="button">7</div>
+							<div class="boto numero" data-value="8" role="button">8</div>
+							<div class="boto numero" data-value="9" role="button">9</div>
+							<div id="multiplica" class="boto imatge signe" data-value="*" role="button">
 								<img class="icon" src="https://png.icons8.com/ios/50/000000/multiply.png">
 							</div>
 						</div>
 
 						<div class="fila">
-							<div class="boto numero" role="button">4</div>
-							<div class="boto numero" role="button">5</div>
-							<div class="boto numero" role="button">6</div>
-							<div id="resta" class="boto image signe" role="button">
+							<div class="boto numero" data-value="4" role="button">4</div>
+							<div class="boto numero" data-value="5" role="button">5</div>
+							<div class="boto numero" data-value="6" role="button">6</div>
+							<div id="resta" class="boto image signe" data-value="-" role="button">
 								<img class="icon" src="https://png.icons8.com/ios/50/000000/minus-math.png">
 							</div>
 						</div>
 
 						<div class="fila">
-							<div class="boto numero" role="button">1</div>
-							<div class="boto numero" role="button">2</div>
-							<div class="boto numero" role="button">3</div>
-							<div id="suma" class="boto imatge signe" role="button">
+							<div class="boto numero" data-value="1" role="button">1</div>
+							<div class="boto numero" data-value="2" role="button">2</div>
+							<div class="boto numero" data-value="3" role="button">3</div>
+							<div id="suma" class="boto imatge signe" data-value="+" role="button">
 								<img class="icon" src="https://png.icons8.com/ios/50/000000/plus-math.png">
 							</div>
 						</div>
 
 						<div class="fila">
-							<div id="suma-resta" class="boto imatge signe" role="button">
+							<div id="suma-resta" class="boto imatge signe"  data-value="+-" role="button">
 								<img class="icon" src="https://png.icons8.com/windows/50/000000/plus-minus.png">
 							</div>
-							<div class="boto numero" role="button">0</div>
-							<div id="punt" class="boto punt signe" role="button">.</div>
-							<div id="igual" class="boto imatge equals signe" role="button">
+							<div class="boto numero"  data-value="0" role="button">0</div>
+							<div id="punt" class="boto punt signe" data-value="." role="button">.</div>
+							<div id="igual" class="boto imatge equals signe" data-value="=" role="button">
 								<img class="icon" src="https://png.icons8.com/windows/50/000000/equal-sign.png" width="32" height="32">
 							</div>
 						</div>
