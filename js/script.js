@@ -83,15 +83,15 @@
           pantallaPrincipal.style.fontSize = '3rem';
       }
 
-      console.log('Result: ' + resultat);
-      console.log('Prev result: ' + resAnterior);
-      console.log('current number: ' + numActual);
-      console.log('btn: ' + btn);
-      console.log('Prev Math Op: ' + operadorAnterior);
-      console.log('Math Op Counter: ' + contadorOperadors);
-      console.log('Prev btn: '+ btnAnterior);
-      console.log('History: ' + historial);
-      console.log('Main Screen ' + pantallaPrincipal.value);
+      console.log('Resultat: ' + resultat);
+      console.log('Resultat anterior: ' + resAnterior);
+      console.log('Numero actual: ' + numActual);
+      console.log('Boto: ' + btn);
+      console.log('Operador anterior: ' + operadorAnterior);
+      console.log('Contador operadors: ' + contadorOperadors);
+      console.log('Boto anterior: '+ btnAnterior);
+      console.log('Historial: ' + historial);
+      console.log('Pantalla principal ' + pantallaPrincipal.value);
       console.log('*'.repeat(15));
     }
 
@@ -112,7 +112,12 @@
           if (btn === '.' && /^\d+$/.test(numActual)) {
               numActual = numActual + btn;
           } else if (!isNaN(btn)) {
-              numActual = (!isNaN(btnAnterior) && btnAnterior !== null && pantallaPrincipal.value !== '0') || btnAnterior === '.' ? numActual + btn : btn;
+            if((!isNaN(btnAnterior) && btnAnterior !== null && pantallaPrincipal.value !== '0') || btnAnterior === '.'){
+              numActual = numActual + btn;
+            }else{
+              numActual = btn;
+            }
+              
           }
           clicaOperador = false;
           actualitzaPantalla(numActual);
