@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Informació</title>
+  <link rel="stylesheet" href="css/estil.css">
+</head>
+<body>
+  <ul>
+    <li><a href="index.html">Index</a></li>
+    <li><a href="calculadora.html">Calculadora</a></li>
+    <li><a href="calculadoraCientifica.html">Calculador Cientifica</a></li>
+    <li style="float: right"><a href="">></a></li>
+    <li style="float: right"><a href=""><</a></li>
+    <li style="float: right"><a class="active" href="informacio.html">Informació</a></li>
+  </ul>
+
+  <div style="padding:20px;margin-top:30px;color:white">
+    <script>
+      document.write("<br /><strong>Navegador utilitzat: </strong>"+navigator.appCodeName+"<br />");
+      document.write("<strong>Versió del navegador: </strong>"+navigator.appVersion+"<br />");
+      document.write("<strong>SO on es va compilar el navegador: </strong>"+navigator.platform+"<br />");
+      document.write("<strong>Data darrera modificació de la vostra calculadora: </strong>30/10/2018<br />");
+      document.write("<strong>Idioma: </strong>"+navigator.language+"<br />");
+      document.write("<strong>Dades del hostname (URL): </strong>"+location.host+location.pathname+"<br />");
+    </script>
+  </div>
+
+</body>
+</html>

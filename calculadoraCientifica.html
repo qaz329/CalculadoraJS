@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculadora</title>
+	<link rel="stylesheet" href="css/estil.css">
+</head>
+<body>
+	<ul>
+    <li><a href="index.html">Index</a></li>
+    <li><a href="calculadora.html">Calculadora</a></li>
+    <li><a class="active" href="calculadoraCientifica.html">Calculador Cientifica</a></li>
+		<li style="float: right"><a href="">></a></li>
+    <li style="float: right"><a href=""><</a></li>
+    <li style="float: right"><a href="informacio.html">Informació</a></li>
+  </ul>
+	<main class="container">
+		<div id="calculadora">
+			<!-- PART SUPERIOR -->
+			<header class="top-part">
+				<div class="top">
+					<h5 class="titol">Calculadora</h5>
+					<div class="window">
+						<div class="minimize boto">
+							<img class="icon" src="https://png.icons8.com/material/50/000000/minus.png">
+						</div>
+						<div class="maximize boto">
+							<img class="icon" src="https://png.icons8.com/material/50/000000/rectangle-stroked.png">
+						</div>
+						<div class="close boto">
+							<img class="icon" src="https://png.icons8.com/windows/50/000000/multiply.png">
+						</div>
+					</div>
+				</div>
+
+				<div class="mode">
+					<div class="columna menu">
+						<div class="menu-calculadora boto-top" role="button">
+							<img class="icon" src="https://png.icons8.com/windows/50/000000/menu.png">
+						</div>
+						<label class="mode-triat">CIENTÍFICA</label>
+					</div>
+					<div class="columna historial">
+						<div class="boto-top" role="button">
+							<img class="icon" src="https://png.icons8.com/windows/50/000000/time-machine.png">
+						</div>
+					</div>
+				</div>
+
+				<div class="pantalla">
+					<div class="pantalla-historial">
+						<input id="historial" type="text" value="" disabled>
+					</div>
+					<div class="pantalla-principal">
+						<input id="principal" value="" type="text" disabled>
+					</div>
+				</div>
+
+				<div>
+					<div class="memoria">
+						<div role="button">MC</div>
+						<div role="button">MR</div>
+						<div role="button">M+</div>
+						<div role="button">M-</div>
+						<div role="button">MS</div>
+						<div role="button">M&darr;</div>
+					</div>
+				</div>
+			</header>
+
+			<!-- BOTONS -->
+			<section>
+				<div class="features">
+					<div class="sub-menu">
+
+						<!-- BOTONS SUPERIORS (blanc) -->
+						<div class="fila">
+							<div id="percentage" class="boto imatge signe" data-value="%" role="button">
+								<img class="icon" src="https://png.icons8.com/ios/50/000000/percentage.png">
+							</div>
+							<div id="arrel" class="boto imatge signe" data-value="arrel" role="button">
+								<img class="icon" src="https://png.icons8.com/windows/50/000000/square-root.png">
+							</div>
+							<div id="quadrat" class="boto signe" data-value="quadrat" role="button">
+								<span>
+									<sub>x</sub>
+								</span>
+								<span>
+									<sup>2</sup>
+								</span>
+							</div>
+							<div id="fraccio" class="boto signe" data-value="1/x" role="button">
+								<span>
+									<sup>1</sup>
+								</span>
+								<span>&frasl;</span>
+								<span>
+									<sub><em>x</em></sub>
+								</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- BOTONS INFERIORS (gris) -->
+					<div class="menu-principal">
+						<div class="fila">
+							<div id="borra-entrada" class="boto signe" data-value="CE" role="button">CE</div>
+							<div id="borra-tot" class="boto signe" data-value="C" role="button">C</div>
+							<div id="borra-un" class="boto imatge signe" data-value="CS" role="button">
+								<img class="icon" src="https://png.icons8.com/windows/50/000000/clear-symbol.png">
+							</div>
+							<div id="dividir" class="boto imatge signe" data-value="/" role="button">
+								<img class="icon" src="https://png.icons8.com/windows/50/000000/divide.png">
+							</div>
+						</div>
+
+						<div class="fila">
+							<div class="boto numero" data-value="7" role="button">7</div>
+							<div class="boto numero" data-value="8" role="button">8</div>
+							<div class="boto numero" data-value="9" role="button">9</div>
+							<div id="multiplica" class="boto imatge signe" data-value="*" role="button">
+								<img class="icon" src="https://png.icons8.com/ios/50/000000/multiply.png">
+							</div>
+						</div>
+
+						<div class="fila">
+							<div class="boto numero" data-value="4" role="button">4</div>
+							<div class="boto numero" data-value="5" role="button">5</div>
+							<div class="boto numero" data-value="6" role="button">6</div>
+							<div id="resta" class="boto image signe" data-value="-" role="button">
+								<img class="icon" src="https://png.icons8.com/ios/50/000000/minus-math.png">
+							</div>
+						</div>
+
+						<div class="fila">
+							<div class="boto numero" data-value="1" role="button">1</div>
+							<div class="boto numero" data-value="2" role="button">2</div>
+							<div class="boto numero" data-value="3" role="button">3</div>
+							<div id="suma" class="boto imatge signe" data-value="+" role="button">
+								<img class="icon" src="https://png.icons8.com/ios/50/000000/plus-math.png">
+							</div>
+						</div>
+
+						<div class="fila">
+							<div id="suma-resta" class="boto imatge signe"  data-value="+-" role="button">
+								<img class="icon" src="https://png.icons8.com/windows/50/000000/plus-minus.png">
+							</div>
+							<div class="boto numero"  data-value="0" role="button">0</div>
+							<div id="punt" class="boto punt signe" data-value="." role="button">.</div>
+							<div id="igual" class="boto imatge equals signe" data-value="=" role="button">
+								<img class="icon" src="https://png.icons8.com/windows/50/000000/equal-sign.png" width="32" height="32">
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+		</div>
+	</main>
+<script src="js/script.js"></script>
+</body>
+</html>
