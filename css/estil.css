@@ -93,7 +93,14 @@ body {
     justify-content: center;
     align-items: center;
 }
-.boto.close:hover {
+.botosup {
+    width: 25%;
+    line-height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botosup.close:hover {
     background: #f00;
 }
 .sub-menu .boto {
@@ -114,6 +121,14 @@ body {
     cursor: pointer;
 }
 .boto:active {
+    background: #b8b8b8;
+}
+
+.botosup:hover {
+    background: #cfcfcf;
+    cursor: pointer;
+}
+.botosup:active {
     background: #b8b8b8;
 }
 .equals:hover {
